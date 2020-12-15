@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Squares and Cubes of number</title>
+    </head>
+    <style>
+        table,tr,td{
+            margin: auto;
+            border: solid black;
+            width: 33%;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        .a{
+            background-color:crimson;
+        }
+        .b{
+            background-color: pink;
+        }
+        .c{
+            background-color: cyan;
+        }
+        .d{
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        document.write("<table><tr class='a'><th colspan='3'>Numbers From 0 To 10 With Their Squares And Cubes</th></tr>");
+        document.write("<tr class='b'><td class='d'>Number</td><td class='d'>Square</td><td class='d'>Cube</td></tr>");
+        for(var n=0; n<=10; n++)
+        {
+            document.write("<tr class='c'><td>"+ n +"</td><td>"+ n*n +"</td><td>"+ n*n*n +"</td></tr>");
+        }
+        document.write("</table>");
+    </script>
+</html>
